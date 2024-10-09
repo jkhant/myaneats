@@ -13,57 +13,70 @@ struct ContentView: View {
     @State private var istabBarHidden: Bool = false
     
     var body: some View {
-        
-        if #available(iOS 18, *){
-            TabView (selection: $activeTab){
-                Tab.init(value: .home){
-                    Text("Home")
-                        .toolbarVisibility(.hidden, for: .tabBar)
-                }
-                Tab.init(value: .search){
-                    Text("Search")
-                        .toolbarVisibility(.hidden, for: .tabBar)
-                }
-                Tab.init(value: .cart){
-                    Text("Cart")
-                        .toolbarVisibility(.hidden, for: .tabBar)
-                }
-                Tab.init(value: .profile){
-                    Text("Profile")
-                        .toolbarVisibility(.hidden, for: .tabBar)
+        ZStack(alignment: .bottom){
+            Group {
+                if #available(iOS 18, *){
+                    
+                    TabView (selection: $activeTab){
+                        Tab.init(value: .home){
+                            Text("Home")
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
+                        Tab.init(value: .search){
+                            Text("Search")
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
+                        Tab.init(value: .map){
+                            Text("Map")
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
+                        Tab.init(value: .recipe){
+                            Text("Recipe")
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
+                        Tab.init(value: .cart){
+                            Text("Cart")
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
+                        Tab.init(value: .profile){
+                            Text("Profile")
+                                .toolbarVisibility(.hidden, for: .tabBar)
+                        }
+                    }
+                    
+                } else {
+                    TabView(selection: $activeTab){
+                        Text("Home")
+                            .tag(TabModel.home)
+                            .background {
+                                if !istabBarHidden {
+                                    HideTabBar {
+                                        print ("Hidden")
+                                        istabBarHidden = true
+                                    }
+                                }
+                            }
+                        Text("Search")
+                            .tag(TabModel.search)
+                        
+                        Text("Map")
+                            .tag(TabModel.map)
+                        
+                        Text("Recipe")
+                            .tag(TabModel.recipe)
+                        
+                        Text("Cart")
+                            .tag(TabModel.cart)
+                        
+                        Text("Profile")
+                            .tag(TabModel.profile)
+                        
+                    }
+                    
                 }
             }
             
-        } else {
-            TabView(selection: $activeTab){
-                Text("Home")
-                    .tag(TabModel.home)
-                    .background {
-                        if !istabBarHidden {
-                            HideTabBar {
-                                print ("Hidden")
-                                istabBarHidden = true
-                            }
-                        }
-                    }
-                Text("Search")
-                    .tag(TabModel.search)
-                    
-                Text("Cart")
-                    .tag(TabModel.cart)
-                   
-                Text("Profile")
-                    .tag(TabModel.profile)
-                    
-            }
-            .overlay {
-                Button {
-                    activeTab = activeTab == .home ? .search : .home
-                } label: {
-                    Text("Switch Tabs")
-                }
-                .offset(y: 100)
-            }
+            CustomTabBar(activeTab: $activeTab)
         }
     }
 }

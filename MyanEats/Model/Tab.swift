@@ -10,8 +10,11 @@ import SwiftUI
 enum TabModel: String, CaseIterable {
     case home = "house"
     case search = "magnifyingglass"
+    case map = "map"
+    case recipe = "fork.knife"
     case cart = "cart"
     case profile = "person.crop.circle"
+    
     
     var title: String {
         switch self {
@@ -19,6 +22,8 @@ enum TabModel: String, CaseIterable {
             case .search: "Search"
             case .cart: "Cart"
             case .profile: "Profile"
+            case .map : "Map"
+            case .recipe: "Recipe"
         }
     }
 }

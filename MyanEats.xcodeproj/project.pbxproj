@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		932A1A712CB4A57000E29A6E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A702CB4A57000E29A6E /* Media.xcassets */; };
+		932A1A722CB4A57000E29A6E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A702CB4A57000E29A6E /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		932A1A472CB4713300E29A6E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		932A1A362CB4713200E29A6E /* MyanEats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyanEats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932A1A462CB4713300E29A6E /* MyanEatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyanEatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932A1A502CB4713300E29A6E /* MyanEatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyanEatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		932A1A702CB4A57000E29A6E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +81,7 @@
 		932A1A2D2CB4713200E29A6E = {
 			isa = PBXGroup;
 			children = (
+				932A1A702CB4A57000E29A6E /* Media.xcassets */,
 				932A1A382CB4713200E29A6E /* MyanEats */,
 				932A1A492CB4713300E29A6E /* MyanEatsTests */,
 				932A1A532CB4713300E29A6E /* MyanEatsUITests */,
@@ -212,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932A1A712CB4A57000E29A6E /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932A1A722CB4A57000E29A6E /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyanEats/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Y9V5BYY79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -424,6 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyanEats/Preview Content\"";
+				DEVELOPMENT_TEAM = 4Y9V5BYY79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
