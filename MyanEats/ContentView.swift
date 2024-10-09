@@ -39,11 +39,11 @@ struct ContentView: View {
                                 .toolbarVisibility(.hidden, for: .tabBar)
                         }
                         Tab.init(value: .profile){
-                            Text("Profile")
+                            Profile()
                                 .toolbarVisibility(.hidden, for: .tabBar)
                         }
                     }
-                    
+                      
                 } else {
                     TabView(selection: $activeTab){
                         Text("Home")
