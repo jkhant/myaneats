@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		932A1A712CB4A57000E29A6E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A702CB4A57000E29A6E /* Media.xcassets */; };
 		932A1A722CB4A57000E29A6E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A702CB4A57000E29A6E /* Media.xcassets */; };
+		932A1A742CB653FF00E29A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A732CB653FF00E29A6E /* GoogleService-Info.plist */; };
+		932A1A752CB653FF00E29A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A732CB653FF00E29A6E /* GoogleService-Info.plist */; };
+		932A1A762CB653FF00E29A6E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A732CB653FF00E29A6E /* GoogleService-Info.plist */; };
 		932A1A7B2CB654B600E29A6E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 932A1A7A2CB654B600E29A6E /* FirebaseAnalytics */; };
 		932A1A7D2CB6553B00E29A6E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 932A1A7C2CB6553B00E29A6E /* FirebaseAuth */; };
 		932A1A802CB6561300E29A6E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 932A1A7F2CB6561300E29A6E /* GoogleSignIn */; };
@@ -38,24 +41,11 @@
 		932A1A462CB4713300E29A6E /* MyanEatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyanEatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932A1A502CB4713300E29A6E /* MyanEatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyanEatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932A1A702CB4A57000E29A6E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		932A1A732CB653FF00E29A6E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		932A1A872CB65B0800E29A6E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		932A1A772CB653FF00E29A6E /* Exceptions for "MyanEats" folder in "MyanEatsTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"GoogleService-Info.plist",
-			);
-			target = 932A1A452CB4713300E29A6E /* MyanEatsTests */;
-		};
-		932A1A782CB653FF00E29A6E /* Exceptions for "MyanEats" folder in "MyanEatsUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"GoogleService-Info.plist",
-			);
-			target = 932A1A4F2CB4713300E29A6E /* MyanEatsUITests */;
-		};
 		932A1A842CB6571F00E29A6E /* Exceptions for "MyanEats" folder in "MyanEats" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -70,8 +60,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				932A1A842CB6571F00E29A6E /* Exceptions for "MyanEats" folder in "MyanEats" target */,
-				932A1A772CB653FF00E29A6E /* Exceptions for "MyanEats" folder in "MyanEatsTests" target */,
-				932A1A782CB653FF00E29A6E /* Exceptions for "MyanEats" folder in "MyanEatsUITests" target */,
 			);
 			path = MyanEats;
 			sourceTree = "<group>";
@@ -126,6 +114,7 @@
 				932A1A532CB4713300E29A6E /* MyanEatsUITests */,
 				932A1A372CB4713200E29A6E /* Products */,
 				932A1A872CB65B0800E29A6E /* .gitignore */,
+				932A1A732CB653FF00E29A6E /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +258,7 @@
 			files = (
 				932A1A882CB65B1300E29A6E /* .gitignore in Resources */,
 				932A1A712CB4A57000E29A6E /* Media.xcassets in Resources */,
+				932A1A742CB653FF00E29A6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				932A1A722CB4A57000E29A6E /* Media.xcassets in Resources */,
+				932A1A762CB653FF00E29A6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932A1A752CB653FF00E29A6E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
