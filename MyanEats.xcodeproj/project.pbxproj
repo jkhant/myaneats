@@ -13,6 +13,7 @@
 		932A1A7D2CB6553B00E29A6E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 932A1A7C2CB6553B00E29A6E /* FirebaseAuth */; };
 		932A1A802CB6561300E29A6E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 932A1A7F2CB6561300E29A6E /* GoogleSignIn */; };
 		932A1A822CB6561300E29A6E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 932A1A812CB6561300E29A6E /* GoogleSignInSwift */; };
+		932A1A882CB65B1300E29A6E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 932A1A872CB65B0800E29A6E /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		932A1A462CB4713300E29A6E /* MyanEatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyanEatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932A1A502CB4713300E29A6E /* MyanEatsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyanEatsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932A1A702CB4A57000E29A6E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		932A1A872CB65B0800E29A6E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -123,6 +125,7 @@
 				932A1A492CB4713300E29A6E /* MyanEatsTests */,
 				932A1A532CB4713300E29A6E /* MyanEatsUITests */,
 				932A1A372CB4713200E29A6E /* Products */,
+				932A1A872CB65B0800E29A6E /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932A1A882CB65B1300E29A6E /* .gitignore in Resources */,
 				932A1A712CB4A57000E29A6E /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
