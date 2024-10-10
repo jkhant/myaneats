@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomTabBar: View {
     
     var activeForeground: Color = .white
-    var activeBackground: Color = .blue
+    var activeBackground: Color = .primaryRed
     @Binding var activeTab: TabModel
     @Namespace private var animation
     
@@ -31,7 +31,7 @@ struct CustomTabBar: View {
                                 .fontWeight(.semibold)
                         }
                     }
-                    .foregroundStyle(activeTab == tab ? activeForeground : .gray)
+                    .foregroundStyle(activeTab == tab ? activeForeground : .neutralGray)
                     .padding(.vertical, 2)
                     .padding(.leading, 10)
                     .padding(.trailing, 15)
